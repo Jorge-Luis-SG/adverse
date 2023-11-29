@@ -1,0 +1,114 @@
+<div class="container-fluid lg-section1" [class.darkbg]="theme">
+  <div class="row">
+    <div class="col-12 col-xl-5 d-flex align-items-center justify-content-center lg-section1-box1">
+      <div class="box1 text-center text-lg-start">
+        <img src="./assets/images/others/text-section1.svg" alt="Adverse">
+        <h1 class="title" [class.dark]="theme"> {{ 'lgSection1.welcome' | translate }}</h1>
+        <p>{{ 'lgSection1.welcome-info' | translate }}</p>
+        <button class="btn1">{{ 'lgSection1.button1' | translate }}</button>
+        <button class="btn2">{{ 'lgSection1.button2' | translate }}</button>
+      </div>
+
+    </div>
+    <div class=" col-12 col-xl-7 py-5 py-xxl-0 d-flex align-items-center justify-content-center">
+      <div class="box2">
+        <div class="box2-one d-flex flex-column">
+          <div class="box2-one-container1 d-flex flex-column flex-md-row justify-content-between align-items-center position-relative">
+            <div>
+              <h4 [class.dark]="theme">{{ 'lgSection1.buy-stake' | translate }}<br>
+                {{ 'lgSection1.ads-now' | translate }}
+              </h4>
+              <p [class.dark]="theme">{{ 'lgSection1.buy-stake-text' | translate }}</p>
+            </div>
+            <img src="./assets/images/logo/logo.svg" alt="Adverse">
+          </div>
+          <div class="box2-one-container2 pb-5 position-relative">
+            <img src="./assets/images/icons/settings.svg" alt="Settings" class="position-absolute settings">
+            <img src="./assets/images/others/x-style-{{!theme? 'light': 'dark'}}.svg" class="position-absolute x-style">
+            <p class="title-p" [class.dark]="theme">{{ 'lgSection1.amount.one' | translate }} <span>ETH</span> {{ 'lgSection1.amount.two' | translate }}</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center position-relative">
+              <input type="text" class="w-100" placeholder="0">
+              <div class="buttons d-flex justify-content-between">
+                <button (click)="select('doge')" [class.active]="bSelect == 'doge'">
+                  <img src="./assets/images/icons/doge.svg" alt="DOGE"> DOGE
+                </button>
+                <button (click)="select('usdt')" [class.active]="bSelect == 'usdt'">
+                  <img src="./assets/images/icons/usdt.svg" alt="USDT"> USDT
+                </button>
+                <button (click)="select('eth')" [class.active]="bSelect == 'eth'">
+                  <img src="./assets/images/icons/eth.svg" alt="ETH"> ETH
+                </button>
+              </div>
+            </div>
+
+            <div class="percentage">
+              <hr>
+              <div class="points position-relative">
+                <div class="percentage-container" [class.active]="valueData >=0">
+                  <div class="percentage-point"></div>
+                  <p>0%</p>
+                </div>
+                <div class="percentage-container " [class.active]="valueData >=25">
+                  <div class="percentage-point"></div>
+                  <p>25%</p>
+                </div>
+                <div class="percentage-container " [class.active]="valueData >=50">
+                  <div class="percentage-point"></div>
+                  <p>50%</p>
+                </div>
+                <div class="percentage-container " [class.active]="valueData >=75">
+                  <div class="percentage-point"></div>
+                  <p>75%</p>
+                </div>
+                <div class="percentage-container position-absolute" [class.active]="valueData == 100">
+                  <div class="percentage-point"></div>
+                  <p>100%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box2-one-container3 position-relative ">
+            <div class="box2-one-container3-box1">
+              <p class="title-p"><span class="span1">MAX </span> Amount in
+                <span class="span2">ADS</span> you receive
+              </p>
+              <div class="amount position-relative d-flex align-items-center">
+                <img src="./assets/images/logo/logo-mini.svg" alt="Adverse" class="position-absolute amount-img">
+
+                <input type="text" class="w-100" placeholder="0">
+              </div>
+
+            </div>
+            <div class="box2-one-container3-box2 d-flex d-sm-block flex-column align-items-center justify-content-center">
+              <p class="title-p">{{ 'lgSection1.amount.info' | translate }}
+              </p>
+              <button>{{ 'connect-wallet' | translate }}</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="box2-two">
+
+        </div>
+        <div class="box2-three">
+          <p class="d-flex flex-column flex-sm-row align-items-center justify-content-center"  [class.dark]="theme">{{ 'lgSection1.wallet.one' | translate }} <button>{{ 'lgSection1.wallet.two' | translate }} <img
+                src="./assets/images/icons/copy.svg" alt="Copy">
+            </button> {{ 'lgSection1.wallet.three' | translate }}</p>
+          <button>{{ 'lgSection1.wallet.button' | translate }}</button>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="col-12 d-flex align-items-center justify-content-center banner-coins">
+      <img src="./assets/images/logo/icons-list/btc.svg" alt="btc">
+      <img src="./assets/images/logo/icons-list/eth.svg" alt="eth">
+      <img src="./assets/images/logo/icons-list/ripple.svg" alt="ripple">
+      <img src="./assets/images/logo/icons-list/doge.svg" alt="doge">
+      <img class="d-none d-xl-block" src="./assets/images/logo/icons-list/btc.svg" alt="btc">
+      <img class="d-none d-xl-block" src="./assets/images/logo/icons-list/eth.svg" alt="eth">
+      <img class="d-none d-xl-block" src="./assets/images/logo/icons-list/ripple.svg" alt="ripple">
+      <img class="d-none d-xl-block" src="./assets/images/logo/icons-list/doge.svg" alt="doge">
+    </div>
+  </div>
+</div>

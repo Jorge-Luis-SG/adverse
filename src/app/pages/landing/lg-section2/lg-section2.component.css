@@ -1,0 +1,89 @@
+.lg-section2 {
+  padding-bottom: 5rem;
+  background-color: #F8FAFF;
+  &.darkbg{
+    background-color: var(--black4);
+  }
+  & > .box1 {
+    & > h2 {
+      line-height: 1.75rem;
+      padding-top: 5rem;
+      @media screen and (max-width: 992px) {
+        line-height: 1.65rem;
+        @media screen and (max-width: 500px) {
+          line-height: 1.25rem;
+        }
+      }
+      & > img {
+        width: 200px;
+        margin-left: 1.1rem;
+        @media screen and (max-width: 992px) {
+          width: 185px;
+          @media screen and (max-width: 500px) {
+            width: 140px;
+          }
+        }
+      }
+    }
+    & > p {
+      color: var(--text);
+      max-width: 810px;
+      width: 90%;
+      margin: 2rem auto;
+      &.dark {
+        color: var(--white3);
+      }
+    }
+    & > h4 {
+      font-weight: bold;
+      font-family: "Neue";
+      font-size: 2rem;
+      padding: 0 1.5rem;
+      @media screen and (max-width: 992px) {
+        font-size: 1.8rem;
+        @media screen and (max-width: 500px) {
+          font-size: 1.45rem;
+        }
+      }
+    }
+    & .price {
+      width: 250px;
+      margin-top: 1rem;
+      @media screen and (max-width: 992px) {
+        width: 235px;
+        @media screen and (max-width: 500px) {
+          width: 205px;
+        }
+      }
+    }
+  }
+  & > .box2 {
+    display: grid;
+    grid-template-columns: repeat(6, 210px);
+    gap: 40px;
+    width: 90%;
+    margin: 3rem auto 0;
+    @media screen and (max-width: 1500px) {
+      grid-template-columns: repeat(auto-fill, minmax(210px, 210px));
+    }
+  }
+  & > .pdf {
+    margin-top: 3rem;
+    gap: 2rem;
+    & > .smart {
+      font-size: 0.9rem;
+      padding: 0.55rem 0;
+      width: 175px;
+      border: none;
+      border-radius: .45rem;
+      font-weight: 500;
+      background-color: var(--black3);
+      color: var(--white);
+
+      &.dark {
+        background-color: var(--white);
+        color: var(--black3);
+      }
+    }
+  }
+}

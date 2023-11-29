@@ -1,0 +1,15 @@
+<div class="container-fluid content position-relative" [class.darkbg]="dark" >
+  <app-top-header [theme]="dark" (darkActive)="darkActiveHeader($event)" />
+  <div class="section1 position-relative">
+    <app-lg-section1 [theme]="dark" />
+    <div class="theme-color position-absolute d-none d-lg-block">
+      <img src="./assets/images/icons/light-{{!dark ? 'active' : 'none'}}.svg" alt="Light" (click)="themeMode(false)">
+      <img src="./assets/images/icons/dark-{{dark ? 'active' : 'none'}}.svg" alt="Dark" (click)="themeMode(true)">
+    </div>
+  </div>
+  <app-lg-section2 [theme]="dark" id="what-the-adv" />
+  <app-lg-section3 [theme]="dark" id="adgame" />
+  <app-lg-section4 [theme]="dark" />
+  <app-lg-section5 [theme]="dark" id="adchain"/>
+  <app-footer [theme]="dark" />
+</div>

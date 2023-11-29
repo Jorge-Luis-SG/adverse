@@ -1,0 +1,154 @@
+.lg-section4 {
+  & > .row {
+    min-height: 100vh;
+    width: 100%;
+    & > .lg-section4-container {
+      background-image: url(../../../../assets/images/bg/bg-ad-pool.svg);
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      & > .box1 {
+        max-width: 550px;
+        width: 90%;
+        margin: auto;
+        @media screen and (max-width: 1500px) {
+          max-width: 500px;
+          @media screen and (max-width: 992px) {
+            height: auto;
+            max-width: 450px;
+          }
+        }
+        & > h4 {
+          color: var(--white2);
+        }
+        & > .info1 {
+          margin: 1.5rem 0 0.85rem;
+          max-width: 400px;
+          @media screen and (max-width: 992px) {
+            margin: 1.5rem auto 0.85rem;
+            max-width: max-content;
+          }
+        }
+        & > .info1,
+        & ul > li {
+          color: #ffffff;
+          font-weight: normal;
+          font-size: 0.9rem;
+        }
+        & > ul > li {
+          list-style: none;
+        }
+        & > .wallets {
+          & > .wallets-line {
+            right: 0;
+            left: 0;
+            top: -47px;
+            bottom: 0;
+            margin: auto;
+            @media screen and (max-width: 992px) {
+              right: 30%;
+              top: 170px;
+              transform: rotateZ(90deg);
+              width: 45px;
+            }
+          }
+          & > ul {
+            list-style: none;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            @media screen and (max-width: 992px) {
+              align-items: center;
+            }
+            & > h5 {
+              font-weight: bold;
+              font-family: "Neue";
+              font-size: 1rem;
+              color: #ffffff;
+            }
+            & > li {
+              width: 220px;
+              padding: 0.55rem 1rem 0.55rem;
+              background-color: #e4259a40;
+              backdrop-filter: brightness(1.1) blur(11px);
+              border-radius: 0.7rem;
+              gap: 2rem;
+              font-size: 0.9rem;
+              & > span {
+                width: calc(100% - 48px);
+              }
+              & > p {
+                font-size: 0.65rem;
+                color: #ffffff85;
+                width: 112px;
+                & > img {
+                  right: -12px;
+                  top: -7px;
+                  width: 33px;
+                }
+              }
+            }
+          }
+        }
+        & > .info2 {
+          color: #ffffff90;
+          font-weight: normal;
+          max-width: 481px;
+          margin: 1.5rem auto;
+          padding: 0.55rem 1.5rem;
+          border-radius: 0.4rem;
+          border: 1px solid #eaeaea70;
+        }
+        & .enter {
+          border: none;
+          font-size: 0.9rem;
+          padding: 0.6rem 2rem;
+          width: 165px;
+          border-radius: 0.5rem;
+          color: #000000;
+        }
+      }
+    }
+    & > .lg-section4-container2 {
+      background-color: var(--black4);
+      &.darkbg {
+        background-color: #f5f7ff;
+      }
+      & > .box2 {
+        max-width: 600px;
+        margin: auto;
+        width: 90%;
+        height: 636px;
+        @media screen and (max-width: 1500px) {
+          max-width: 500px;
+          @media screen and (max-width: 992px) {
+            height: auto;
+            max-width: 450px;
+          }
+        }
+
+        & > h4 {
+          color: var(--white2);
+          &.light {
+            color: var(--black4);
+          }
+        }
+        & > p {
+          color: var(--white2);
+          font-weight: 500;
+          width: 100%;
+          margin: 1.35rem 0 2.75rem;
+          &.light {
+            color: #9c9cb1;
+          }
+        }
+        & > .ads-stake-img {
+          width: 100%;
+        }
+        & button {
+          width: 165px;
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}

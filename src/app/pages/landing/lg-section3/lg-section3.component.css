@@ -1,0 +1,210 @@
+.lg-section3 {
+  background-color: var(--white2);
+  &.darkbg {
+    background-color: var(--black4);
+  }
+  & .box1 {
+    max-width: 368px;
+    width: 90%;
+    & > p {
+      color: var(--text);
+      &.dark {
+        color: var(--white3);
+      }
+    }
+    & > .coming-soon {
+      width: 190px;
+      margin-bottom: 0.35rem;
+    }
+    & > button {
+      margin-top: 2rem;
+    }
+  }
+  & > .row > .game {
+    background-image: url(../../../../assets/images/game/bg.png);
+    background-position-y: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 505px;
+    max-width: 1000px;
+    margin: auto;
+
+    & > .torchi {
+      & > div {
+        padding-top: 4rem;
+        & > .torchi-title {
+          max-width: 480px;
+          z-index: 5;
+          @media screen and (max-width: 600px) {
+            max-width: 390px;
+          }
+          &.active-section {
+            animation: brightness 1s linear;
+          }
+        }
+      }
+    }
+    & > .options {
+      display: grid;
+      grid-template-columns: repeat(2, 265px);
+      gap: 1rem;
+      justify-content: center;
+      @media screen and (max-width: 600px) {
+        grid-template-columns: auto;
+      }
+      &.active-section > button {
+        transform: translate(0, 0) !important;
+      }
+      & > button {
+        color: var(--black2);
+        background-color: #f7faff;
+        padding: 0.85rem 1rem;
+        border: none;
+        border-radius: 0.65rem;
+        width: 265px;
+        margin: auto;
+        z-index: 1;
+        transition: all 0.1s;
+        @media screen and (max-width: 600px) {
+          font-size: 0.9rem;
+        }
+        &:hover {
+          color: #f7faff;
+          background-color: var(--black2);
+        }
+
+        &.bt1 {
+          transition: transform 0.8s;
+          transform: translateX(calc(-100% - 200px));
+        }
+        &.bt2 {
+          transition: transform 0.8s;
+          transform: translateX(calc(100% + 200px));
+        }
+        &.bt3 {
+          transition: transform 1.35s;
+          transform: translateY(calc(100% + 200px));
+        }
+
+        &:last-child {
+          grid-column: 1/3;
+          @media screen and (max-width: 600px) {
+            grid-column: 1;
+            font-size: 0.9rem;
+          }
+        }
+      }
+      &.dark {
+        & > button {
+          background-color: transparent;
+          backdrop-filter: blur(10px) brightness(0.75);
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  & > .row > .banner {
+    margin-bottom: 2rem;
+    & > img {
+      width: 90%;
+      max-width: 1100px;
+    }
+  }
+
+  & .sky1,
+  & .sky2,
+  & .sky3,
+  & .sky4,
+  & .sky4,
+  & .sky5 {
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+  }
+  & .sky1 {
+    right: 25px;
+    top: -200px;
+    width: 135px;
+    animation: moveClouds 20s linear infinite alternate;
+
+    @media screen and (max-width: 600px) {
+      top: -147px;
+      width: 120px;
+    }
+  }
+  & .sky2 {
+    top: 0;
+    width: 250px;
+    z-index: 10;
+    animation: moveClouds2 15s linear infinite alternate;
+    right: -30%;
+    transition: right 2s;
+    @media screen and (max-width: 600px) {
+      width: 185px;
+    }
+    &.active-section {
+      right: -45px;
+    }
+  }
+  & .sky3 {
+    top: -110px;
+    left: -100px;
+    width: 95px;
+    animation: moveClouds2 10s linear infinite alternate;
+    transition: left 2s;
+    &.active-section {
+      left: 137px;
+      @media screen and (max-width: 600px) {
+        left: 13%;
+      }
+    }
+  }
+  & .sky4 {
+    top: 145px;
+    width: 150px;
+    animation: moveClouds2 20s linear infinite alternate;
+    left: -20%;
+    transition: left 2s;
+    &.active-section {
+      left: 20px;
+    }
+  }
+  & .sky5 {
+    top: -35px;
+    width: 210px;
+    animation: moveClouds2 20s linear infinite alternate;
+    left: -20%;
+    transition: left 2s;
+    &.active-section {
+      left: 0;
+    }
+  }
+}
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(calc(100% + 80px));
+  }
+  100% {
+    transform: translateX(calc(-100% - 200px));
+  }
+}
+@keyframes moveClouds2 {
+  0% {
+    transform: translate(0, 0) scale(0.9);
+  }
+  50% {
+    transform: translate(30px, -20px) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(0.9);
+  }
+}
+@keyframes brightness {
+  0% {
+    filter: brightness(1.85);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}

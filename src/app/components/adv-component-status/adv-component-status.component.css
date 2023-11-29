@@ -1,0 +1,141 @@
+.adv-component-status {
+  max-width: 210px;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--white2);
+  &.dark {
+    background-color: var(--black);
+  }
+  & h4 {
+    color: #1f2131;
+  }
+  & p {
+    color: var(--text);
+  }
+  .price {
+    filter: invert(1);
+    &.dark {
+      filter: invert(0);
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #1e1c2e;
+    height: 3px;
+    width: 40px;
+    top: 0;
+    bottom: 0;
+    right: -40px;
+    margin: auto;
+  }
+  @media screen and (max-width: 511px) {
+    &::before {
+      top: auto;
+      bottom: -21px;
+      right: 0;
+      left: 0;
+      transform: rotateZ(90deg);
+    }
+  }
+  &.active {
+    background: rgb(229, 0, 86);
+    background: linear-gradient(
+      177deg,
+      rgba(229, 0, 86, 1) 0%,
+      rgba(109, 25, 229, 1) 100%
+    );
+    & h4,
+    & p {
+      color: #ffffff;
+    }
+    .price {
+      filter: none;
+    }
+  }
+  &.end::before {
+    background-color: transparent;
+  }
+  & > .title1 {
+    font-weight: bold;
+    font-family: "Neue";
+    font-size: 1.3rem;
+  }
+  & > .title2 {
+    & > img {
+      width: 18px;
+    }
+    & > h4 {
+      font-weight: bold;
+      font-family: "Montserrat";
+      font-size: 1.8rem;
+    }
+  }
+  & > .discount {
+    min-height: 37px;
+    margin: 0.3rem 0;
+    & > p {
+      &:last-child {
+        font-weight: bold;
+        font-size: 1.55rem;
+      }
+    }
+  }
+  & > .percentage {
+    & > p {
+      font-size: 0.8rem;
+      margin: 0.3rem 0 0.2rem;
+    }
+    & > .line {
+      width: 100%;
+      height: 6px;
+      background-color: #1e1c2e;
+      border-radius: 0.35rem;
+      margin-bottom: 0.8rem;
+      & > .point {
+        background-color: var(--red);
+        height: 100%;
+        width: 80%;
+        border-radius: 0.35rem;
+        &::before {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: -2px;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: white;
+        }
+      }
+    }
+  }
+  & > .raised {
+    & > p {
+      font-size: 0.7rem;
+    }
+  }
+
+  .none {
+    height: 1px;
+    width: 17px;
+    background-color: #1f213155;
+    &.nsold {
+      width: 14px;
+    }
+    &.nraised {
+      width: 50px;
+    }
+  }
+
+  &.dark {
+    .none {
+      background-color: #ffffff50;
+
+      &.nraised {
+        width: 50px;
+        background-color: #ffffff;
+      }
+    }
+  }
+}

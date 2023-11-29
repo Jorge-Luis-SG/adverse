@@ -1,0 +1,50 @@
+<div class="container-fluid footer">
+  <footer class="row justify-content-center">
+    <div class="col-12 col-lg-4 social-networks">
+      <img src="./assets/images/logo/logo-{{theme ? 'light': 'dark'}}.webp" alt="Adverse" class="logo">
+      <div class="d-flex justify-content-between align-items-center icons" [class.dark]="theme">
+        <a href="{{item.url}}" target="_blank" rel="noopener noreferrer" *ngFor="let item of listSocial">
+          <img src="./assets/images/icons/{{item.icon}}.svg" alt="Adverse">
+        </a>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4 menu d-flex justify-content-between align-items-start">
+      <ul [class.dark]="theme">
+        <li>ADVerse</li>
+        <div class="sub-footer">
+          <a href="#adpool">
+            <li>AD Pool</li>
+          </a>
+          <a href="#adstake">
+            <li>AD Stake</li>
+          </a>
+
+        </div>
+      </ul>
+      <ul [class.dark]="theme">
+        <a href="#what-the-adv">
+          <li>AD What?</li>
+        </a>
+      </ul>
+      <ul [class.dark]="theme">
+
+        <a href="#adgame">
+          <li>Games</li>
+        </a>
+
+        <div class="sub-footer">
+          <a href="#adgame">
+            <li>Torchi Inu</li>
+          </a>
+        </div>
+      </ul>
+    </div>
+    <div class="col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center button">
+      <app-lang [theme]="theme" />
+      <button class="whitepaper mt-2">Buy</button>
+    </div>
+    <div class="col-12 copyright">
+      <p class="text-center" [class.dark]="theme">Copyright © 2023 ADVerse. All Rights Reserved.</p>
+    </div>
+  </footer>
+</div>

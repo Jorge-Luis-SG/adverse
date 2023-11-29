@@ -1,0 +1,21 @@
+.content {
+  max-width: 1920px;
+  margin: auto;
+}
+.section1 {
+  background-image: url(../../../assets/images/bg/text-bg-light.svg);
+  background-position: center;
+  background-size: cover;
+  &.dark {
+    background-image: url(../../../assets/images/bg/text-bg-dark.svg);
+  }
+  .theme-color {
+    bottom: 150px;
+    left: 5%;
+    & > img {
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+    }
+  }
+}

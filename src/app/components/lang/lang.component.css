@@ -1,0 +1,26 @@
+.lang {
+  width: 65px;
+  & .separator {
+    height: 20px;
+    width: 2px;
+    background-color: red;
+  }
+
+  & span {
+    color: var(--black);
+    font-family: "Helvetica";
+    font-weight: normal;
+    cursor: pointer;
+    &.dark{
+      color: var(--white);
+    }
+    &.active{
+      color: var(--red) !important;
+    }
+    @media screen and (max-width:768px) {
+      font-size: .9rem;
+    }
+  }
+
+
+}

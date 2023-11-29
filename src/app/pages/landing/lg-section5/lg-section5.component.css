@@ -1,0 +1,92 @@
+.lg-section5 {
+  background-color: var(--white2);
+  &.darkbg {
+    background-color: var(--black4);
+  }
+  & > .row {
+    min-height: 100vh;
+  }
+  & .ads-chain-img {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    @media screen and (max-width: 992px) {
+      max-width: 500px;
+    }
+  }
+  & .box2 {
+    & > .coming-soon {
+      width: 190px;
+      margin-bottom: 0.35rem;
+    }
+    & > h4 {
+      color: var(--black2);
+      & > .ad-chain-icon {
+        width: 35px;
+        margin-right: 0.7rem;
+      }
+    }
+    & > h5 {
+      font-size: 1.85rem;
+      font-weight: bold;
+      font-family: "Neue";
+      color: var(--black2);
+      margin-top: 1rem;
+      &.sub-title-blockchain {
+        max-width: 430px;
+        width: 100%;
+      }
+      @media screen and (max-width: 992px) {
+        font-size: 1.5rem;
+        @media screen and (max-width: 500px) {
+          font-size: 1.3rem;
+        }
+      }
+      &.dark {
+        color: var(--white);
+      }
+    }
+    & > p {
+      color: var(--text);
+      font-weight: 500;
+      max-width: 430px;
+      margin: 1.5rem 0;
+      &.dark {
+        color: var(--white3);
+      }
+    }
+  }
+  & .lg-section5-box3 {
+    margin: 0 0 3rem;
+    @media screen and (max-width: 992px) {
+      margin: 0 auto;
+      padding: 3rem 0 5.5rem;
+      width: 90%;
+    }
+    & > img {
+      margin-right: 2rem;
+      @media screen and (max-width: 600px) {
+        margin-right: 0.7rem;
+      }
+    }
+    & h4 {
+      background-image: linear-gradient(to right, #e50056, #6d19e5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    & h5 {
+      font-weight: bold;
+      font-family: "Neue";
+      color: var(--black);
+      font-size: 1.3rem;
+
+      @media screen and (max-width: 992px) {
+        font-size: 1rem;
+        @media screen and (max-width: 600px) {
+          font-size: 0.9rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

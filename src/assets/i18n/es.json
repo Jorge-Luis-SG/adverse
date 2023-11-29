@@ -1,0 +1,73 @@
+{
+  "connect-wallet":"Conectar Wallet",
+  "whitepaper":"Descargar Whitepaper",
+  "smart":"Smart Contract",
+  "participants":"Participantes",
+  "whitelist":"Whitelist",
+  "enter":"Entrar",
+  "stake":"Stake",
+  "buy":"Buy",
+  "menu":{
+    "op1":"¿Qué ADV?"
+  },
+  "lgSection1":{
+    "welcome":"Bienvenidos al Universo más Adictivo",
+    "welcome-info":"Dicen que toda adicción es mala. Creemos que si esa adicción te da beneficios, ¿por qué no?",
+    "button1":"Comprar $ADS",
+    "button2":"Stake $ADS",
+    "buy-stake":"Compra & Stake",
+    "ads-now":"¡$ADS AHORA!",
+    "buy-stake-text":"Stake $ADS ahora para conseguir recompensas",
+    "amount":{
+      "one":"Cantidad en",
+      "two":"tu pagas",
+      "info":"Después de 7 días, los tokens staked se pueden retirar"
+    },
+    "wallet":{
+      "one":"Usa",
+      "two":"Esta wallet",
+      "three":"Para agregar $ADS a tu wallet",
+      "button":"¿Quieres reclamar tus $ADS?"
+    }
+
+  },
+  "lgSection2":{
+    "welcome":"Bienvenidos al Universo más Adictivo",
+    "info":"¡No somos el futuro! Somos el presente. El presente de un mundo que busca personas y proyectos que den salida a problemas y situaciones agobiantes. Somos ADVerse, la plataforma donde los rechazados e inadaptados logramos construir un ecosistema de apuestas hecho por nosotros y para todos.",
+    "sub-title":"Prepara tu billetera y prepárate para ganar"
+  },
+  "lgSection3":{
+    "title":"ADGames",
+    "info":"Nuestros ADgames son el lugar perfecto para divertirte mientras obtienes ganancias, pero no te preocupes, no estarás solo, serás parte de nuestra comunidad de ADchangers donde no hay restricciones para quienes somos y mucho menos para lo que puede ganar utilizando el ecosistema de apuestas deportivas. nuestro casino y nuestro token: EL $ADSX.",
+    "sub-title":"Prepara tu billetera y prepárate para ganar",
+    "game":{
+      "op1":"Establece tu propio record",
+      "op2":"Participa en torneos",
+      "op3":"Más de 30 Mapas"
+    }
+  },
+  "lgSection4":{
+    "info":"Nuestro pool descentralizado está diseñado especialmente para la ADCommunity, para la recompra de $ADS que se encuentren en circulación.",
+    "list":{
+      "item1":"90% de ganancias de ADGames y ADSports",
+      "item2":"Venta de tokens del 10%"
+    },
+    "info2":"Si compraste en la preventa esto es para ti. Creamos un pool descentralizado en el que podrás entrar para la recompra de tus tokens a precio 1:1 obteniendo ganancias de tu compra de $ADSX que nadie más tendrá.",
+    "info1-box2":"Reservado para los más arriesgados de nuestra comunidad. Nuestro ADstake está diseñado para que ganes hasta 30% APY de tus tokens, además serás parte de la ADcommunity tomando decisiones en comunidad sobre el rumbo de ADverse."
+  },
+  "lgSection5":{
+    "info":"Te presentamos la ADchain, nuestra propia blockchain Layer 1 creada especialmente para los más inadaptados y rebeldes del mundo del entretenimiento y el gaming. A esta blockchain migrará todo el ecosistema que creamos, dando más posibilidades de desarrollo a todos y trayendo la  ADcommunity, LA DAO DE ADVERSE en la que se usará la ADcoin como token de gobernanza para todos los que se quieran sumar a esta aventura.",
+    "sub-chain":"¿Estás listo para cambiar el juego de las blockchains y el gaming?",
+    "list":{
+      "item1":"",
+      "item2":"",
+      "item3":""
+    },
+    "subtitle":"Moneda de gobernanza",
+    "subtitle2":"y usabilidad.",
+
+    "title3":"Deja de creer lo que te dicen.",
+    "subtitle3":"¡Se uno de los rebeldes que se arriesga a ir más allá de lo soñado!"
+  }
+
+}

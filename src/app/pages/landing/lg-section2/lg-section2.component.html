@@ -1,0 +1,31 @@
+<div class="container-fluid lg-section2"  [class.darkbg]="theme">
+  <div class="box1">
+    <h2 class="d-flex align-items-end justify-content-center title" [class.dark]="theme">What <img src="./assets/images/others/the-adv.svg" alt="Adverse"> </h2>
+    <p class="text-center" [class.dark]="theme">
+      {{ 'lgSection2.info' | translate }}
+    </p>
+    <h4 class="text-center" [class.dark]="theme">Prepare your wallet and get ready to win </h4>
+    <div class="w-100 d-flex justify-content-center">
+      <img src="./assets/images/others/1ads.svg" alt="Adverse" class="price">
+
+    </div>
+  </div>
+  <div class="box2 justify-content-center ">
+    <app-adv-component-status [theme]="theme" title="Pre sale 1"
+     [number]="496" [discount]="70" [sold]="89" raised="8.142.149,282" [active]="true" />
+     <app-adv-component-status [theme]="theme" title="Seed sale 2"
+     [number]="296" [discount]="0" [sold]="0" raised="" />
+     <app-adv-component-status [theme]="theme" title="Public sale 1"
+     [number]="185" [discount]="0" [sold]="0" raised="" />
+     <app-adv-component-status [theme]="theme" title="Public sale 2"
+     [number]="105" [discount]="0" [sold]="0" raised="" />
+     <app-adv-component-status [theme]="theme" title="Public sale 3"
+     [number]="96" [discount]="0" [sold]="0" raised="" />
+     <app-adv-component-status [theme]="theme" title="Public sale 4"
+     [number]="90" [discount]="0" [sold]="0" raised="" [end]="true" />
+  </div>
+  <div class="pdf d-flex flex-column flex-sm-row align-items-center justify-content-center">
+    <button class="whitepaper">{{ 'whitepaper' | translate }}</button>
+    <button class="smart" [class.dark]="theme">{{ 'smart' | translate }}</button>
+  </div>
+</div>

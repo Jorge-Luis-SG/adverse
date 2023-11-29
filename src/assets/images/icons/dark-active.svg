@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.943" height="29.943" viewBox="0 0 29.943 29.943">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e50056"/>
+      <stop offset="1" stop-color="#6d19e5"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_feather-moon" data-name="Icon feather-moon" d="M18.064,32.943c-.155,0-.312,0-.467-.007a15,15,0,0,1-.92-29.929,1.5,1.5,0,0,1,1.344,2.385A9,9,0,0,0,30.608,17.979a1.5,1.5,0,0,1,2.385,1.344,15,15,0,0,1-14.93,13.62ZM13.976,6.655a12,12,0,0,0,3.713,23.282c.125,0,.251.006.375.006A12.006,12.006,0,0,0,29.341,22.03,12,12,0,0,1,13.976,6.655Z" transform="translate(-3.057 -3)" fill="url(#linear-gradient)"/>
+</svg>

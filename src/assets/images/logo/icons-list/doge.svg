@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="159.422" height="32.696" viewBox="0 0 159.422 32.696">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_632" data-name="Rectángulo 632" width="7.949" height="8.492" fill="#b20a93"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_1397" data-name="Grupo 1397" transform="translate(-188.578 -975.152)">
+    <g id="Grupo_604" data-name="Grupo 604" transform="translate(-32)">
+      <text id="Doge" transform="translate(246.571 997)" fill="#fff" font-size="16" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Doge</tspan></text>
+      <text id="Adverse" transform="translate(314 997)" fill="#fff" font-size="16" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Adverse</tspan></text>
+      <path id="Trazado_1336" data-name="Trazado 1336" d="M302.286,975.526v32.7" transform="translate(0 -0.374)" fill="none" stroke="#fff" stroke-width="1"/>
+    </g>
+    <g id="Grupo_1396" data-name="Grupo 1396">
+      <circle id="Elipse_9" data-name="Elipse 9" cx="8.5" cy="8.5" r="8.5" transform="translate(188.578 983)" fill="#fff"/>
+      <g id="Grupo_1395" data-name="Grupo 1395" transform="translate(193.203 987.254)">
+        <g id="Grupo_1359" data-name="Grupo 1359" clip-path="url(#clip-path)">
+          <path id="Trazado_1347" data-name="Trazado 1347" d="M.783,6.6q0-.875,0-1.751c0-.141,0-.141-.145-.141H.107C.013,4.711,0,4.7,0,4.606q0-.494,0-.987c0-.09.011-.1.1-.1H.65c.025,0,.05,0,.075,0a.056.056,0,0,0,.057-.059c0-.033,0-.066,0-.1q0-1.606,0-3.211C.783,0,.783,0,.923,0c1.1,0,2.2,0,3.3,0A4.114,4.114,0,0,1,5.637.221,3.129,3.129,0,0,1,7.272,1.538a4.371,4.371,0,0,1,.562,1.49,6.582,6.582,0,0,1,.105.889,6.1,6.1,0,0,1-.221,2.027A3.786,3.786,0,0,1,7.082,7.23,3.115,3.115,0,0,1,5.588,8.289a3.538,3.538,0,0,1-1.066.189c-.3.008-.592.013-.887.013q-1.357,0-2.713,0c-.138,0-.138,0-.138-.138q0-.875,0-1.751M2.239,6V7.109c0,.025,0,.05,0,.075,0,.091.011.1.1.1h.075c.373,0,.747,0,1.12,0,.2,0,.4-.005.6-.017a2.971,2.971,0,0,0,.874-.18,2.2,2.2,0,0,0,.709-.422,2.065,2.065,0,0,0,.575-.9A4.612,4.612,0,0,0,6.49,4.5a5.794,5.794,0,0,0-.031-.944,4.479,4.479,0,0,0-.137-.75,2.141,2.141,0,0,0-.492-.874,2.22,2.22,0,0,0-1.075-.611,3.526,3.526,0,0,0-.87-.114c-.5-.005-1.007,0-1.51,0-.136,0-.137,0-.137.141q0,1.016,0,2.033c0,.137,0,.138.14.138H4.37c.028,0,.055,0,.083,0,.06,0,.072.016.076.075,0,.022,0,.044,0,.066q0,.452,0,.9c0,.148,0,.148-.146.148H2.426c-.205,0-.186-.006-.187.183q0,.552,0,1.1" transform="translate(0 0)" fill="#b20a93"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

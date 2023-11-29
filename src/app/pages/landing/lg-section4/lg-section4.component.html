@@ -1,0 +1,58 @@
+<div class="container-fluid lg-section4">
+  <div class="row">
+    <div id="adpool" class="col-12 col-lg-6 py-5 lg-section4-container d-flex justify-content-center align-items-center">
+      <div class="box1 text-center text-lg-start">
+        <h4 class="title" >ADPool</h4>
+        <p class="info1">
+          {{ 'lgSection4.info' | translate }}
+        </p>
+        <ul>
+          <li><span class="me-2">•</span>{{ 'lgSection4.list.item1' | translate }}</li>
+          <li><span class="me-2">•</span>{{ 'lgSection4.list.item2' | translate }}</li>
+        </ul>
+        <div class="wallets d-flex flex-column flex-lg-row justify-content-between position-relative">
+          <ul class="d-flex flex-column">
+            <h5>{{ 'participants' | translate }}</h5>
+            <li class="d-flex justify-content-between align-items-center " *ngFor="let item of participants">
+              <span>Wallet #{{item.id}}</span>
+              <p class="position-relative" *ngIf="item.selected">Selected!
+                <img src="./assets/images/logo/adv-icon-white-shadow.png" alt="Adverse" class="position-absolute">
+
+              </p>
+            </li>
+          </ul>
+          <img src="./assets/images/others/wallet-line.svg" alt="Adverse" class="position-absolute wallets-line">
+          <ul class="d-flex flex-column">
+            <h5>{{ 'whitelist' | translate }}</h5>
+            <li class="d-flex justify-content-between align-items-center " *ngFor="let item of whiteList">
+              <span>Wallet #{{item.id}}</span>
+              <p class="position-relative" *ngIf="item.selected">Selected!
+                <img src="./assets/images/logo/adv-icon-white-shadow.png" alt="Adverse" class="position-absolute">
+
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <p class="info2">
+          {{ 'lgSection4.info2' | translate }}
+        </p>
+        <div class="w-100 d-flex justify-content-center ">
+          <button class="enter">{{ 'enter' | translate }}</button>
+        </div>
+      </div>
+    </div>
+    <div id="adstake" class="col-12 col-lg-6 py-5 lg-section4-container2  d-flex justify-content-center align-items-center" [class.darkbg]="theme">
+      <div class="box2 text-center text-lg-start">
+        <h4 class="title" [class.light]="theme">ADStake</h4>
+
+        <p [class.light]="theme">{{ 'lgSection4.info1-box2' | translate }}</p>
+
+        <img src="./assets/images/others/ads-stake.png" alt="Adverse" class="ads-stake-img">
+        <div class="w-100 d-flex justify-content-center">
+          <button class="whitepaper">{{ 'stake' | translate }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

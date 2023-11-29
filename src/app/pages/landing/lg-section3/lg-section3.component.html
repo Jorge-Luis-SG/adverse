@@ -1,0 +1,37 @@
+<div class="container-fluid lg-section3" [class.darkbg]="theme">
+  <div class="row">
+    <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+      <div class="box1 py-5 text-center text-lg-start">
+        <img src="./assets/images/others/coming-soon.svg" alt="Coming soon" class="coming-soon">
+        <h2 class="title" [class.dark]="theme"> {{ 'lgSection3.title' | translate }}</h2>
+        <p [class.dark]="theme"> {{ 'lgSection3.info' | translate }}</p>
+        <button class="whitepaper">{{ 'whitepaper' | translate }}</button>
+
+      </div>
+    </div>
+    <div class="col-12 col-lg-7 game overflow-hidden">
+      <div class="torchi">
+
+        <div class="w-100 d-flex justify-content-center position-relative" >
+          <img src="./assets/images/game/torchi.png" alt="Torchi" class="torchi-title" appAddClassOnScroll />
+          <img src="./assets/images/game/sky1.svg" alt="Torchi" class="sky1" appAddClassOnScroll />
+          <img appAddClassOnScroll src="./assets/images/game/sky2.svg" alt="Torchi" class="sky2"  />
+          <img src="./assets/images/game/sky3.svg" alt="Torchi" class="sky3" appAddClassOnScroll />
+          <img src="./assets/images/game/sky4.svg" alt="Torchi" class="sky4" appAddClassOnScroll />
+
+        </div>
+      </div>
+      <div class="options position-relative" [class.dark]="theme" appAddClassOnScroll>
+        <img src="./assets/images/game/sky5.svg" alt="Torchi" class="sky5" appAddClassOnScroll>
+        <button class="bt1" [class.boton-rebote]="reboteActivo" (click)="activarRebote()">{{ 'lgSection3.game.op1' | translate }}</button>
+        <button class="bt2">{{ 'lgSection3.game.op2' | translate }}</button>
+        <button class="bt3">{{ 'lgSection3.game.op3' | translate }}</button>
+      </div>
+    </div>
+    <div class="col-12 banner d-flex justify-content-center align-items-center">
+
+      <img src="./assets/images/others/banner.png" alt="AD Casino">
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<!-- <div class="d-flex justify-content-between align-items-center lang">
+  <span class="lang-{{code1}} " (click)="translate.setDefaultLang('en'); en()" >EN</span>
+  <div></div>
+  <span class="lang-{{code2}}" (click)="translate.setDefaultLang('es'); es()" >ES</span>
+</div> -->
+
+<div class="d-flex justify-content-between align-items-center lang">
+
+  <span [ngClass]="{'active': lang == 'en', 'dark':theme}"
+   (click)="setLanguage('en')">EN</span>
+
+  <div class="separator"></div>
+
+  <span [ngClass]="{'active': lang == 'es', 'dark':theme}" 
+  (click)="setLanguage('es')">ES</span>
+
+</div>

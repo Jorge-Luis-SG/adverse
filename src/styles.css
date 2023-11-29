@@ -1,1 +1,91 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(./assets/fonts/fonts.css);
+/* F8FAFF */
+:root {
+  --black: #18181d;
+  --black2: #1f2131;
+  --black3: #191c26;
+  --black4: #0a0b0d;
+  --gray: #d6d8e5;
+  --red: #e50056;
+  --white: #f4f7ff;
+  --white2: #f0f4ff;
+  --white3: #D3D3F0;
+  --text: #8888aa;
+  --blue: #3188ff;
+}
+
+* {
+  font-family: "Montserrat";
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+ul,
+.container-fluid,
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--white2);
+  min-height: 100vh;
+}
+p, a {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.whitepaper {
+  width: 255px;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.55rem 0;
+  border: none;
+  border-radius: 0.35rem;
+  background: rgb(229, 0, 86);
+  background: linear-gradient(
+    106deg,
+    rgba(229, 0, 86, 1) 0%,
+    rgba(109, 25, 229, 1) 100%
+  );
+}
+.title {
+  font-size: 2.75rem;
+  font-weight: bold;
+  font-family: "Neue";
+  @media screen and (max-width: 992px) {
+    font-size: 2.3rem;
+    @media screen and (max-width: 500px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.darkbg {
+  background-color: var(--black4);
+  transition: color 0.4s;
+}
+a{
+  text-decoration: none;
+}
+
+h1,
+h2,
+h4,
+h5,
+p,
+span,
+ul > li,
+li {
+  transition: color 0.5s;
+
+  &.dark {
+    color: var(--white) !important;
+  }
+}
