@@ -183,7 +183,7 @@
     padding: 0.8rem;
     border-radius: .4rem;
     &.dark li {
-      color: var(--white);
+      color: var(--white) !important;
       & > img {
         filter: none;
       }
